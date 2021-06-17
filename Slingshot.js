@@ -1,14 +1,14 @@
 class SlingShot{
-    constructor(bodyA, pointB){
+    constructor(bodyA, bodyB){
         var options = {
             bodyA: bodyA,
-            pointB: pointB,
+            bodyB: bodyB,
             stiffness: 0.5            
         }
         this.sling1 = loadImage('sprites/sling1.png');
        
         this.sling = Constraint.create(options);
-        World.add(world, this.sling);
+        World.add(myWorld, this.sling);
     }
    
    show(){
